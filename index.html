@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Coffee Flight — Daily Dogfight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <div id="header">
+      <div id="title">Coffee Flight</div>
+      <div id="stats">
+        <div>Best: <span id="bestTime">—</span></div>
+        <div>Streak: <span id="streak">0</span></div>
+      </div>
+    </div>
+
+    <div id="canvas-wrap">
+      <canvas id="gameCanvas"></canvas>
+      <!-- fire button overlay -->
+      <button id="fireBtn" aria-label="Fire missile">☕️</button>
+    </div>
+
+    <div id="controls-hint">Tap left / right halves to steer • Fire with the cup</div>
+
+    <div id="footer">
+      <button id="playBtn">Play Daily Challenge</button>
+      <div id="result" class="hidden"></div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
